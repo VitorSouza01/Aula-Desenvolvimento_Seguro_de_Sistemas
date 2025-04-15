@@ -1,0 +1,15 @@
+create database login_db
+
+use login_db;
+
+CREATE TABLE usuario (
+	id int NOT NULL AUTO_INCREMENT,
+    usuario varchar(50) NOT NULL,
+    senha varchar(255) NOT NULL,
+    PRIMARY KEY (id)
+)
+
+INSERT INTO `login_db`.`usuario`
+(`usuario`, `senha`)
+VALUES
+('vitor', '010203');
